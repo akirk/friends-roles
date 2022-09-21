@@ -35,7 +35,7 @@ foreach ( $args['roles'] as $role => $data ) {
 	}
 	?>
 	<tr id="role=<?php echo esc_attr( $role ); ?>">
-		<td><?php echo esc_attr( $role ); ?><input type="text" name="friend_role[<?php echo esc_attr( $role ); ?>][name]" value="<?php echo esc_attr( $data['name'] ); ?>" placeholder="Name"></td>
+		<td><input type="text" name="friend_role[<?php echo esc_attr( $role ); ?>][name]" value="<?php echo esc_attr( $data['name'] ); ?>" placeholder="Name"></td>
 		<td>
 		<?php
 		if ( isset( $data['capabilities']['friend_request'] ) ) {
